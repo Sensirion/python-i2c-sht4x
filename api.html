@@ -1,0 +1,909 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Documentation &mdash; sensirion_i2c_sht4x 0.1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Quick Start" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> sensirion_i2c_sht4x
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#sht4x">SHT4X</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-sensirion_i2c_sht4x.device">Sht4xDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sensirion_i2c_sht4x.commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sensirion_i2c_sht4x.result_types">Result Types</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sensirion_i2c_sht4x</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-documentation">
+<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="sht4x">
+<h1>SHT4X<a class="headerlink" href="#sht4x" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-sensirion_i2c_sht4x.device">
+<span id="sht4xdevice"></span><h2>Sht4xDevice<a class="headerlink" href="#module-sensirion_i2c_sht4x.device" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.device.</code><code class="descname">Sht4xDeviceBase</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Low level API implementation of SHT4X</p>
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.measure_high_precision_ticks">
+<code class="descname">measure_high_precision_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.measure_high_precision_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.measure_high_precision_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.measure_medium_precision_ticks">
+<code class="descname">measure_medium_precision_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.measure_medium_precision_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.measure_medium_precision_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.measure_lowest_precision_ticks">
+<code class="descname">measure_lowest_precision_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.measure_lowest_precision_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.measure_lowest_precision_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_highest_heater_power_long_ticks">
+<code class="descname">activate_highest_heater_power_long_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.activate_highest_heater_power_long_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_highest_heater_power_long_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_highest_heater_power_short_ticks">
+<code class="descname">activate_highest_heater_power_short_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.activate_highest_heater_power_short_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_highest_heater_power_short_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_medium_heater_power_long_ticks">
+<code class="descname">activate_medium_heater_power_long_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.activate_medium_heater_power_long_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_medium_heater_power_long_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_medium_heater_power_short_ticks">
+<code class="descname">activate_medium_heater_power_short_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.activate_medium_heater_power_short_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_medium_heater_power_short_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_lowest_heater_power_long_ticks">
+<code class="descname">activate_lowest_heater_power_long_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.activate_lowest_heater_power_long_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_lowest_heater_power_long_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_lowest_heater_power_short_ticks">
+<code class="descname">activate_lowest_heater_power_short_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.activate_lowest_heater_power_short_ticks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.activate_lowest_heater_power_short_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDeviceBase.serial_number">
+<code class="descname">serial_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDeviceBase.serial_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDeviceBase.serial_number" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return serial_number:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Unique serial number</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.device.</code><code class="descname">Sht4xDevice</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Driver class implementation of SHT4X</p>
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.measure_high_precision">
+<code class="descname">measure_high_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.measure_high_precision"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.measure_high_precision" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command for a single shot measurement with high repeatability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.measure_medium_precision">
+<code class="descname">measure_medium_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.measure_medium_precision"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.measure_medium_precision" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command for a single shot measurement with medium repeatability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.measure_lowest_precision">
+<code class="descname">measure_lowest_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.measure_lowest_precision"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.measure_lowest_precision" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command for a single shot measurement with low repeatability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_long">
+<code class="descname">activate_highest_heater_power_long</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.activate_highest_heater_power_long"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_long" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command to activate highest heater power and perform a single shot high
+precision measurement for 1s.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_short">
+<code class="descname">activate_highest_heater_power_short</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.activate_highest_heater_power_short"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_short" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command to activate highest heater power and perform a single shot high
+precision measurement for 0.1s.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_long">
+<code class="descname">activate_medium_heater_power_long</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.activate_medium_heater_power_long"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_long" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command to activate medium heater power and perform a single shot high
+precision measurement for 1s.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_short">
+<code class="descname">activate_medium_heater_power_short</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.activate_medium_heater_power_short"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_short" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command to activate medium heater power and perform a single shot high
+precision measurement for 0.1s.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_long">
+<code class="descname">activate_lowest_heater_power_long</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.activate_lowest_heater_power_long"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_long" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command to activate lowest heater power and perform a single shot high
+precision measurement for 1s.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_short">
+<code class="descname">activate_lowest_heater_power_short</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/device.html#Sht4xDevice.activate_lowest_heater_power_short"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_short" title="Permalink to this definition">¶</a></dt>
+<dd><p>SHT4x command to activate lowest heater power and perform a single shot high
+precision measurement for 0.1s.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return a_temperature:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Converted from ticks to degrees celsius by (175 * ticks_value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return a_humidity:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Converted from ticks to percent relative humdity by (125 * ticks_value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_long_ticks">
+<code class="descname">activate_highest_heater_power_long_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_long_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_short_ticks">
+<code class="descname">activate_highest_heater_power_short_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_highest_heater_power_short_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_long_ticks">
+<code class="descname">activate_lowest_heater_power_long_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_long_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_short_ticks">
+<code class="descname">activate_lowest_heater_power_short_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_lowest_heater_power_short_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_long_ticks">
+<code class="descname">activate_medium_heater_power_long_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_long_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_short_ticks">
+<code class="descname">activate_medium_heater_power_short_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.activate_medium_heater_power_short_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.measure_high_precision_ticks">
+<code class="descname">measure_high_precision_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.measure_high_precision_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.measure_lowest_precision_ticks">
+<code class="descname">measure_lowest_precision_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.measure_lowest_precision_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.measure_medium_precision_ticks">
+<code class="descname">measure_medium_precision_ticks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.measure_medium_precision_ticks" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return temperature_ticks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Temperature ticks. Convert to degrees celsius by (175 * value / 65535) - 45</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return humidity_ticks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Humidity ticks. Convert to degrees celsius by (125 * value / 65535) - 6</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sht4x.device.Sht4xDevice.serial_number">
+<code class="descname">serial_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensirion_i2c_sht4x.device.Sht4xDevice.serial_number" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return serial_number:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Unique serial number</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-sensirion_i2c_sht4x.commands">
+<span id="commands"></span><h2>Commands<a class="headerlink" href="#module-sensirion_i2c_sht4x.commands" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.MeasureHighPrecisionTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">MeasureHighPrecisionTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#MeasureHighPrecisionTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.MeasureHighPrecisionTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.MeasureHighPrecisionTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.MeasureHighPrecisionTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.MeasureMediumPrecisionTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">MeasureMediumPrecisionTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#MeasureMediumPrecisionTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.MeasureMediumPrecisionTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.MeasureMediumPrecisionTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.MeasureMediumPrecisionTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.MeasureLowestPrecisionTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">MeasureLowestPrecisionTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#MeasureLowestPrecisionTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.MeasureLowestPrecisionTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.MeasureLowestPrecisionTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.MeasureLowestPrecisionTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerLongTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">ActivateHighestHeaterPowerLongTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#ActivateHighestHeaterPowerLongTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerLongTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerLongTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerLongTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerShortTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">ActivateHighestHeaterPowerShortTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#ActivateHighestHeaterPowerShortTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerShortTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerShortTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerShortTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerLongTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">ActivateMediumHeaterPowerLongTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#ActivateMediumHeaterPowerLongTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerLongTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerLongTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerLongTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerShortTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">ActivateMediumHeaterPowerShortTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#ActivateMediumHeaterPowerShortTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerShortTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerShortTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerShortTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerLongTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">ActivateLowestHeaterPowerLongTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#ActivateLowestHeaterPowerLongTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerLongTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerLongTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerLongTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerShortTicks">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">ActivateLowestHeaterPowerShortTicks</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#ActivateLowestHeaterPowerShortTicks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerShortTicks" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerShortTicks.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerShortTicks.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.SerialNumber">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">SerialNumber</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#SerialNumber"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.SerialNumber" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.SerialNumber.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.SerialNumber.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.commands.SoftReset">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.commands.</code><code class="descname">SoftReset</code><a class="reference internal" href="_modules/sensirion_i2c_sht4x/commands.html#SoftReset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.commands.SoftReset" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sht4x.commands.SoftReset.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sht4x.commands.SoftReset.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-sensirion_i2c_sht4x.result_types">
+<span id="result-types"></span><h2>Result Types<a class="headerlink" href="#module-sensirion_i2c_sht4x.result_types" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.result_types.SignalTemperature">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.result_types.</code><code class="descname">SignalTemperature</code><span class="sig-paren">(</span><em>temperature_ticks</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/result_types.html#SignalTemperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.result_types.SignalTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sht4x.result_types.SignalTemperature.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>temperature_ticks</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/result_types.html#SignalTemperature.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.result_types.SignalTemperature.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sht4x.result_types.SignalHumidity">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sht4x.result_types.</code><code class="descname">SignalHumidity</code><span class="sig-paren">(</span><em>humidity_ticks</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/result_types.html#SignalHumidity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.result_types.SignalHumidity" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sht4x.result_types.SignalHumidity.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>humidity_ticks</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sht4x/result_types.html#SignalHumidity.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sht4x.result_types.SignalHumidity.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022 Sensirion AG, Switzerland
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: master
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="master/api.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
