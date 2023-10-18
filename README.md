@@ -1,9 +1,10 @@
 # Python I2C Driver for Sensirion SHT4X
 
-This repository contains the Python driver to communicate with the Sensirion
-SHT4X sensor family over I2C. 
+This repository contains the Python driver to communicate with a Sensirion sensor of the SHT4X family over I2C. 
 
-<center><img src="images/SHT4x.png" width="300px"></center>
+<img src="https://raw.githubusercontent.com/Sensirion/python-i2c-sht4x/master/images/SHT4x.png"
+    width="300px" alt="SHT4X picture">
+
 
 Click [here](https://sensirion.com/products/catalog/SEK-SHT40/) to learn more about the Sensirion SHT4X sensor family.
 
@@ -21,28 +22,41 @@ The following instructions and examples use a *SHT40*.
 
 
 
-## Usage
+## Connect the sensor
 
-See user manual at
-[https://sensirion.github.io](https://sensirion.github.io/python-i2c-sht4x).
+You can connect your sensor over a [SEK-SensorBridge](https://developer.sensirion.com/sensirion-products/sek-sensorbridge/).
+For special setups you find the sensor pinout in the section below.
 
-#### Detaild sensor pinout
-
-<img src="images/SHT40_pinout.png" width="300px">
+<details><summary>Sensor pinout</summary>
+<p>
+<img src="https://raw.githubusercontent.com/Sensirion/python-i2c-sht4x/master/images/SHT40_pinout.png"
+     width="300px" alt="sensor wiring picture">
 
 | *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
 |-------|---------------|:------:|----------------|------------|
-| 1 | green |SDA | I2C: Serial data input / output | 
-| 2 | black |GND | Ground | 
-| 3 | yellow |SCL | I2C: Serial clock input | 
-| 4 | red |VDD | Supply Voltage | 1.1 to 3.6V
-## Development
+| 1 | green | SDA | I2C: Serial data input / output | 
+| 2 | black | GND | Ground | 
+| 3 | yellow | SCL | I2C: Serial clock input | 
+| 4 | red | VDD | Supply Voltage | 1.1V to 3.6V
+
+
+</p>
+</details>
+
+
+## Documentation & Quickstart
+
+See the [documentation page](https://sensirion.github.io/python-i2c-sht4x) for an API description and a 
+[quickstart](https://sensirion.github.io/python-i2c-sht4x/execute-measurements.html) example.
+
+
+## Contributing
 
 We develop and test this driver using our company internal tools (version
 control, continuous integration, code review etc.) and automatically
 synchronize the `master` branch with GitHub. But this doesn't mean that we
 don't respond to issues or don't accept pull requests on GitHub. In fact,
-you're very welcome to open issues or create pull requests :)
+you're very welcome to open issues or create pull requests :-)
 
 ### Check coding style
 
@@ -59,37 +73,6 @@ In addition, we check the formatting of files with
 ```bash
 pip install editorconfig-checker==2.0.3   # Install requirements
 editorconfig-checker                      # Run check
-```
-
-### Run tests
-
-Unit tests can be run with [`pytest`](https://pytest.org/):
-
-```bash
-pip install -e .[test]                       # Install requirements
-pytest -m "not needs_device"                 # Run tests without hardware
-pytest                                       # Run all tests
-pytest -m "needs_device"                     # Run all tests for SHT4X
-
-```
-
-The tests with the marker `needs_device` have following requirements:
-
-- The SHT4X sensor must be connected to a
-  [SensorBridge](https://sensirion.com/products/catalog/SEK-SensorBridge/) on port 1.
-- Pass the serial port where the SensorBridge is connected with
-  `--serial-port`, e.g. `pytest --serial-port=COM7`
-- The SensorBridge must have default settings (baudrate 460800, address 0)
-
-
-### Build documentation
-
-The documentation can be built with [Sphinx](http://www.sphinx-doc.org/):
-
-```bash
-python setup.py install                        # Install package
-pip install -r docs/requirements.txt           # Install requirements
-sphinx-versioning build docs docs/_build/html  # Build documentation
 ```
 
 ## License
