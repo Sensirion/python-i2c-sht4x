@@ -1,73 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>sensirion_i2c_sht4x.commands &mdash; sensirion_i2c_sht4x 0.1.0 documentation</title>
-  
-
-  
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensirion_i2c_sht4x.commands &mdash; sensirion_i2c_sht4x 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../index.html" class="icon icon-home"> sensirion_i2c_sht4x
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                0.1.0
+                1.0.0
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -75,261 +38,233 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api.html">API Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api.html#sht4x">SHT4X</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">sensirion_i2c_sht4x</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Module code</a> &raquo;</li>
-        
       <li>sensirion_i2c_sht4x.commands</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <h1>Source code for sensirion_i2c_sht4x.commands</h1><div class="highlight"><pre>
 <span></span><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="c1">#</span>
-<span class="c1"># (c) Copyright 2022 Sensirion AG, Switzerland</span>
+<span class="c1"># (c) Copyright 2023 Sensirion AG, Switzerland</span>
 <span class="c1">#</span>
 <span class="c1">#     THIS FILE IS AUTOMATICALLY GENERATED!</span>
 <span class="c1">#</span>
-<span class="c1"># Generator:    sensirion-driver-generator 0.9.1</span>
-<span class="c1"># Product:      sht4x</span>
-<span class="c1"># Version:      None</span>
+<span class="c1"># Generator:     sensirion-driver-generator 0.32.0</span>
+<span class="c1"># Product:       sht4x</span>
+<span class="c1"># Model-Version: 2.0.0</span>
 <span class="c1">#</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">The transfer classes specify the data that is transferred between host and sensor. The generated transfer classes</span>
+<span class="sd">are used by the driver class and not intended for direct use.</span>
+<span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
-<span class="kn">from</span> <span class="nn">sensirion_i2c_adapter.transfer</span> <span class="kn">import</span> <span class="n">Transfer</span><span class="p">,</span> <span class="n">TxData</span><span class="p">,</span> <span class="n">RxData</span>
-<span class="kn">from</span> <span class="nn">sensirion_driver_support_types.bitfield</span> <span class="kn">import</span> <span class="n">BitField</span><span class="p">,</span> <span class="n">BitfieldContainer</span>
+<span class="kn">from</span> <span class="nn">sensirion_driver_adapters.transfer</span> <span class="kn">import</span> <span class="n">Transfer</span>
+<span class="kn">from</span> <span class="nn">sensirion_driver_adapters.rx_tx_data</span> <span class="kn">import</span> <span class="n">TxData</span><span class="p">,</span> <span class="n">RxData</span>
 
 
 <div class="viewcode-block" id="MeasureHighPrecisionTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.MeasureHighPrecisionTicks">[docs]</a><span class="k">class</span> <span class="nc">MeasureHighPrecisionTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;SHT4x command for a single shot measurement with high repeatability.&quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0xfd</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="MeasureHighPrecisionTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.MeasureHighPrecisionTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="MeasureMediumPrecisionTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.MeasureMediumPrecisionTicks">[docs]</a><span class="k">class</span> <span class="nc">MeasureMediumPrecisionTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;SHT4x command for a single shot measurement with medium repeatability.&quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0xf6</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="MeasureMediumPrecisionTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.MeasureMediumPrecisionTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="MeasureLowestPrecisionTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.MeasureLowestPrecisionTicks">[docs]</a><span class="k">class</span> <span class="nc">MeasureLowestPrecisionTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;SHT4x command for a single shot measurement with lowest repeatability.&quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0xe0</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="MeasureLowestPrecisionTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.MeasureLowestPrecisionTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.002</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ActivateHighestHeaterPowerLongTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerLongTicks">[docs]</a><span class="k">class</span> <span class="nc">ActivateHighestHeaterPowerLongTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SHT4x command to activate highest heater power and perform a single shot high</span>
+<span class="sd">    precision measurement for 1s.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x39</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ActivateHighestHeaterPowerLongTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerLongTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ActivateHighestHeaterPowerShortTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerShortTicks">[docs]</a><span class="k">class</span> <span class="nc">ActivateHighestHeaterPowerShortTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SHT4x command to activate highest heater power and perform a single shot high</span>
+<span class="sd">    precision measurement for 0.1s.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x32</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ActivateHighestHeaterPowerShortTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateHighestHeaterPowerShortTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ActivateMediumHeaterPowerLongTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerLongTicks">[docs]</a><span class="k">class</span> <span class="nc">ActivateMediumHeaterPowerLongTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SHT4x command to activate medium heater power and perform a single shot high</span>
+<span class="sd">    precision measurement for 1s.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x2f</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ActivateMediumHeaterPowerLongTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerLongTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ActivateMediumHeaterPowerShortTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerShortTicks">[docs]</a><span class="k">class</span> <span class="nc">ActivateMediumHeaterPowerShortTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SHT4x command to activate medium heater power and perform a single shot high</span>
+<span class="sd">    precision measurement for 0.1s.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x24</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ActivateMediumHeaterPowerShortTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateMediumHeaterPowerShortTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ActivateLowestHeaterPowerLongTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerLongTicks">[docs]</a><span class="k">class</span> <span class="nc">ActivateLowestHeaterPowerLongTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SHT4x command to activate lowest heater power and perform a single shot high</span>
+<span class="sd">    precision measurement for 1s.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x1e</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ActivateLowestHeaterPowerLongTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerLongTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">1.1</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ActivateLowestHeaterPowerShortTicks"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerShortTicks">[docs]</a><span class="k">class</span> <span class="nc">ActivateLowestHeaterPowerShortTicks</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SHT4x command to activate lowest heater power and perform a single shot high</span>
+<span class="sd">    precision measurement for 0.1s.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x15</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ActivateLowestHeaterPowerShortTicks.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.ActivateLowestHeaterPowerShortTicks.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="SerialNumber"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.SerialNumber">[docs]</a><span class="k">class</span> <span class="nc">SerialNumber</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Read out the serial number&quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x89</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="SerialNumber.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.SerialNumber.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;I&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="SoftReset"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.SoftReset">[docs]</a><span class="k">class</span> <span class="nc">SoftReset</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Perform a soft reset.&quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x94</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="SoftReset.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sht4x.commands.SoftReset.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
 </pre></div>
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022 Sensirion AG, Switzerland
-
-    </p>
+    <p>&#169; Copyright 2023 Sensirion AG, Switzerland.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-        <span class="fa fa-book"> Other Versions</span>
-        v: master
-        <span class="fa fa-caret-down"></span>
-    </span>
-    <div class="rst-other-versions">
-        <dl>
-            <dt>Branches</dt>
-            <dd><a href="../../master/_modules/sensirion_i2c_sht4x/commands.html">master</a></dd>
-        </dl>
-    </div>
-</div>
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
