@@ -12,9 +12,9 @@ python_requires = '>=3.6, <4'
 # Packages that this package imports. List everything apart from standard lib packages.
 install_requires = [
     'sensirion-i2c-driver>=1.0.0,<2.0',
-    'sensirion-driver-adapters>=2.1.8,<3.0',
+    'sensirion-driver-adapters>=2.1.9,<3.0',
     'sensirion-driver-support-types~=0.2.0',
-    'sensirion-shdlc-sensorbridge~=0.1.1'
+    'sensirion-shdlc-sensorbridge>=0.1.0,<0.3.0'
 ]
 
 # Packages required for tests and docs
@@ -23,12 +23,6 @@ extras_require = {
         'flake8~=3.7.8',
         'pytest~=6.2.5',
         'pytest-cov~=3.0.0',
-    ],
-    'docs': [
-        'click==8.0.4',
-        'jinja2==3.0.1',
-        'sphinx~=4.2.0',
-        'sphinx-rtd-theme~=0.5.2',
     ]
 }
 
@@ -40,7 +34,7 @@ if result:
 else:
     raise RuntimeError("Unable to find version string")
 
-# Use README.rst and CHANGELOG.rst as package description
+# Use README.rst and CHANGELOG.md as package description
 root_path = os.path.dirname(__file__)
 long_description = open(os.path.join(root_path, 'README.md')).read()
 
@@ -59,7 +53,7 @@ setup(
     project_urls={
         "Documentation": "https://sensirion.github.io/python-i2c-sht4x",
         "Repository": "https://github.com/Sensirion/python-i2c-sht4x",
-        "Changelog": "https://github.com/Sensirion/python-i2c-sht4x/blob/master/CHANGELOG.rst",
+        "Changelog": "https://github.com/Sensirion/python-i2c-sht4x/blob/master/CHANGELOG.md",
     },
     packages=find_packages(exclude=['tests', 'tests.*']),
     long_description=long_description,
@@ -72,6 +66,7 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.11',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ]
 )

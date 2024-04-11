@@ -1,6 +1,6 @@
 # Python I2C Driver for Sensirion SHT4X
 
-This repository contains the Python driver to communicate with a Sensirion sensor of the SHT4X family over I2C. 
+This repository contains the Python driver to communicate with a Sensirion sensor of the SHT4X family over I2C.
 
 <img src="https://raw.githubusercontent.com/Sensirion/python-i2c-sht4x/master/images/SHT4x.png"
     width="300px" alt="SHT4X picture">
@@ -34,9 +34,9 @@ For special setups you find the sensor pinout in the section below.
 
 | *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
 |-------|---------------|:------:|----------------|------------|
-| 1 | green | SDA | I2C: Serial data input / output | 
-| 2 | black | GND | Ground | 
-| 3 | yellow | SCL | I2C: Serial clock input | 
+| 1 | green | SDA | I2C: Serial data input / output |
+| 2 | black | GND | Ground |
+| 3 | yellow | SCL | I2C: Serial clock input |
 | 4 | red | VDD | Supply Voltage | 1.1V to 3.6V
 
 
@@ -46,7 +46,7 @@ For special setups you find the sensor pinout in the section below.
 
 ## Documentation & Quickstart
 
-See the [documentation page](https://sensirion.github.io/python-i2c-sht4x) for an API description and a 
+See the [documentation page](https://sensirion.github.io/python-i2c-sht4x) for an API description and a
 [quickstart](https://sensirion.github.io/python-i2c-sht4x/execute-measurements.html) example.
 
 
